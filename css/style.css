@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'fira code', sans-serif;
+    background-color: #f9f6f6;
+    color: #000000;
+    line-height: 1.5;
+}
+
+header, footer {
+    background-color: #b63a3a;
+    color: #eef3f8;
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    position: relative;
+}
+
+header h2 {
+    font-size: 2.5em;
+}
+
+nav ul li a {
+    font-size: 1.5em;
+}
+
+nav ul {
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #faf0f0;
+}
+
+#user {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#username, .widget dl dt {
+    font-weight: bold;
+}
+
+#logout {
+    background-color: #3973ee;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transition: transform 0.25s;
+}
+
+.edit-button, .delete-button, #task-timer-stop, #task-timer-reset {
+    background-color: #b63a3a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transition: transform 0.25s;
+}
+
+button[type="submit"] {
+    background-color: #a44ab6;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transition: transform 0.25s;
+}
+
+#logout:hover, .edit-button:hover, .delete-button:hover, #task-timer-stop:hover, #task-timer-reset:hover, button[type="submit"]:hover {
+    background-color: #6d6969;
+    transform: scale(1.05);
+}
+
+#tasksearch, button[type="submit"] {
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#tasksearch {
+    border: 1px solid #ccc;
+    width: 500px;
+    max-width: calc(100% - 20px);
+}
+
+.task-board, .widget, #task-timer-widget {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s;
+}
+
+.task-board h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.task-card, .widget {
+    background-color: #f4f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s;
+}
+
+.task-card:hover {
+    transform: translateY(-1.01px) scale(1.01);
+}
+
+.task-card h3, .widget h3, #task-timer-widget h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.task-timestamp, .task-due {
+    font-size: 1em;
+}
+
+.task-content, .task-controls {
+    margin-top: 5px;
+}
+
+#widgets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.widget {
+    flex: 0 0 calc(50% - 40px);
+    margin-right: 20px;
+}
+
+.widget dl {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.widget dl dd {
+    margin-left: 5px;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+}
+
+#task-timer-remaining, #task-timer-units {
+    font-size: 1.5em;
+}
